@@ -12,7 +12,8 @@ I do not advise to do this on your main machine because you'll need to clear you
 2. Go to Source.cpp and edit line 83 to the path of the image sequence
 3. Clear the desktop, if some icons remaign clear the folder ``C:\Users\Public\Desktop``
 4. Disable file name extensions
-5. Compile and run the code in the github
-6. The program will create 1632 images on your desktop, so if explorer crashes close and reopen the program
-7. Wait for the program to index all the files
-8. Enjoy!
+5. Go to the desktop and press ``CTRL-SHIFT-4`` to set the small icon size
+6. Compile and run the code in the github
+7. The program will create 1632 images on your desktop, so if explorer crashes close and reopen the program
+8. Wait for the program to index all the files
+9. Enjoy!
