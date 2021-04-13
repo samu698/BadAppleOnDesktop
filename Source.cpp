@@ -18,6 +18,13 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+// ############## IMPORTANT #################
+// edit this to the path of your bad apple image sequence
+// the file names should end with <n>.jpg were n starts from 1
+// to get the image seqence with this names you can use the command
+// ffmpeg -i badApple.mp4 C:\Path\To\File\file%d.jpg
+#define IMG_SEQ_PATH "C:\\Path\\To\\File\\file"
+
 using namespace cimg_library;
 using namespace std::chrono_literals;
 // simple class to keep everything in sync
@@ -80,7 +87,7 @@ int main() {
 	while (!window.is_closed()) {
 		int x, y, ch;
 
-		std::string img = "D:\\ba\\ba";						// this is the path to the image sequence
+		std::string img = IMG_SEQ_PATH;						// this is the path to the image sequence
 		img += std::to_string(clock.getFrame() + 1);		// in my case the file name is ba%d.jpg where %d is a counter starting from 1
 		img += ".jpg";
 
